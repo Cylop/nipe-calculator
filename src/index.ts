@@ -7,7 +7,7 @@ import { Request } from "express-serve-static-core";
 import api from "./routes/api";
 
 const PORT = process.env.PORT || 5000;
-const PROXY_SECRET: string = process.env.RAPIDAPI_PROXY_SECRET || "test"; // in Header: "X-RapidAPI-Proxy-Secret";
+const PROXY_SECRET: string = process.env.RAPIDAPI_PROXY_SECRET || "baf47800-331b-11ec-83bb-db3d1a0ed791"; // in Header: "X-RapidAPI-Proxy-Secret";
 
 const server = express();
 
