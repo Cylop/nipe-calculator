@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "nodemon",
     "build": "rimraf ./build && tsc",
-    "start": "npm run build && node build/index.js"
+    "install:ci": "npm ci",
+    "start": "npm run install:ci && build && node build/index.js"
   },
   "author": "Nicholas Petrasek",
   "license": "ISC",
