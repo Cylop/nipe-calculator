@@ -8,7 +8,7 @@
     "start:dev": "nodemon",
     "start": "node build/index.js",
     "build": "./node_modules/.bin/tsc",
-    "install": "npm ci",
+    "install": "npm install",
     "postinstall": "npm run build"
   },
   "author": "Nicholas Petrasek",
