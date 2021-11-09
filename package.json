@@ -8,7 +8,7 @@
     "start:dev": "nodemon",
     "build": "rimraf ./build && tsc",
     "install:ci": "npm ci",
-    "start": "npm run install:ci && build && node build/index.js"
+    "start": "npm run install:ci && npm run build && node build/index.js"
   },
   "author": "Nicholas Petrasek",
   "license": "ISC",
