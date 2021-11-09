@@ -20,7 +20,7 @@
     "@types/morgan": "^1.9.3",
     "@types/node": "^16.11.7",
     "nodemon": "^2.0.14",
-    "rimraf": "^3.0.2",
+    
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
   },
@@ -28,10 +28,10 @@
     "cors": "^2.8.5",
     "exact-math": "^2.2.3",
     "express": "^4.17.1",
-    "express-rate-limit": "^5.5.1",
     "fparser": "^2.0.1",
     "helmet": "^4.6.0",
     "lodash": "^4.17.21",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "rimraf": "^3.0.2"
   }
 }
