@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "nodemon",
-    "build": "npx rimraf ./build && npm run postinstall",
-    "postinstall": "tsc",
-    "install:ci": "npm ci",
-    "start": "npm run install:ci && npm run build && node build/index.js"
+    "start": "node build/index.js",
+    "build": "tsc",
+    "install": "npm ci",
+    "postinstall": "npm run build"
   },
   "author": "Nicholas Petrasek",
   "license": "ISC",
@@ -21,7 +21,6 @@
     "@types/morgan": "^1.9.3",
     "@types/node": "^16.11.7",
     "nodemon": "^2.0.14",
-    
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
   },
