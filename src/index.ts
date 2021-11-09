@@ -58,6 +58,7 @@ server.use((req, res) => res.status(404).json({status: "not-found", message: "se
 
 
 const validateHeader = (req: Request) => {
+  if(req.path === "/") return true;
   console.log("Headers: ", req.headers)
   if (req.headers?.["x-rapidapi-proxy-secret"]) {
     console.log("Rapidapi Proxy Secret header found");
