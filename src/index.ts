@@ -50,7 +50,12 @@ server.use((req, res, next) => {
   res.status(403).json({ status: "error", message: "Api can be only used within RapidApi infrastructure" });
 });
 
+server.get("/", (req, res) => res.send("<p>Welcome to the Calculator API. If you are planing to work with this go to the following link: <a href='https://rapidapi.com/nicholas.petrasek/api/calculator17'>RapidAPI Link</a></p>"))
+
 server.use("/api", api);
+
+server.use((req, res) => res.status(404).json({status: "not-found", message: "seems like you are looking for something that does not exist"}))
+
 
 const validateHeader = (req: Request) => {
   console.log("Headers: ", req.headers)
